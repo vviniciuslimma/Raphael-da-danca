@@ -26,8 +26,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
+
+<style >
+   :root{
     --bg-0:#0d0d0d;
     --bg-1:#111111;
     --bg-2:#161616;
@@ -585,6 +586,7 @@
     .gallery-grid .g:nth-child(1){grid-column:span 1;}
   }
 </style>
+
 </head>
 <body>
 
@@ -876,17 +878,8 @@
   </div>
 </footer>
 
-<script>
-  if('IntersectionObserver' in window){
-    document.documentElement.classList.add('js-reveal');
-    const els = document.querySelectorAll('[data-reveal]');
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, {threshold:0.15});
-    els.forEach(el=>io.observe(el));
-  }
+<script >
+
 </script>
 
 </body>
